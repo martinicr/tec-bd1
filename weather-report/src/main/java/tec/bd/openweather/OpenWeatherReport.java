@@ -1,4 +1,4 @@
-package tec.bd.weather.service;
+package tec.bd.openweather;
 
 import com.google.gson.annotations.SerializedName;
 

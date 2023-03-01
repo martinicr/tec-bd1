@@ -1,4 +1,4 @@
-package tec.bd.weather.service;
+package tec.bd.openweather;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -3,10 +3,6 @@ package tec.bd;
 import picocli.CommandLine;
 import tec.bd.cli.MainCommand;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )

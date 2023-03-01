@@ -6,8 +6,8 @@ import picocli.CommandLine.HelpCommand;
 @Command(
         name = "WeatherReport",
         subcommands = {
-//                WeatherCommand.class,
-                ZipCodeCommand.class,
+                WeatherByCityCommand.class,
+                WeatherByZipCodeCommand.class,
                 HelpCommand.class
         },
         description = "Weather forecasts for cities around the world")
