@@ -10,7 +10,7 @@ public interface WeatherReportStorage {
 
     void remove(String reportKey);
 
-    Report update(Report oldReport);
+    Report update(Report newReport);
 
     Report find(String reportKey);
 

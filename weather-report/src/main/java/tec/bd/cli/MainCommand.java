@@ -8,6 +8,7 @@ import picocli.CommandLine.HelpCommand;
         subcommands = {
                 WeatherByCityCommand.class,
                 WeatherByZipCodeCommand.class,
+                GUICommand.class,
                 HelpCommand.class
         },
         description = "Weather forecasts for cities around the world")

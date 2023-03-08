@@ -31,7 +31,19 @@ public class InMemoryWeatherReportStorage implements WeatherReportStorage {
     }
 
     @Override
-    public Report update(Report oldReport) {
+    public Report update(Report newReport) {
+        /*
+        *  var oldReport = this.db.get(generateKeyFromReport(newReport)
+        *
+        * if (oldReport != null)
+        * {
+        *   this.db.put(newReport);
+        *   return newReport;
+        * }
+        *
+        * return oldReport;
+        * */
+
         return null;
     }
 
@@ -46,7 +58,7 @@ public class InMemoryWeatherReportStorage implements WeatherReportStorage {
     }
 
     private String generateKeyFromReport(Report report) {
-        var dateFormat = new SimpleDateFormat("dd-mm-YYYY");
+        var dateFormat = new SimpleDateFormat("dd-MM-YYYY");
         return (dateFormat.format(report.getDate()) + "-" + report.getReportType());
     }
 }
