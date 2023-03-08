@@ -6,10 +6,10 @@ on:
     branches:
       - main
       - dev
-	
-	paths:
-	- weather-report/**
-    - .github/workflows/weather-report-build.yml 
+
+    paths:
+      - weather-report/**
+      - .github/workflows/weather-report-build.yml 
 
 # Trabajos
 
