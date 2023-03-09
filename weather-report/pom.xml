@@ -24,7 +24,7 @@
   <distributionManagement>
     <repository>
       <id>github</id>
-      <name>GitHub Packages</name>
+      <name>martinicr</name>
       <url>https://maven.pkg.github.com/martinicr/tec-bd1</url>
     </repository>
   </distributionManagement>
