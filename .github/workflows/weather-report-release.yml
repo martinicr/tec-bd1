@@ -26,14 +26,16 @@ jobs:
           distribution: 'adopt'
           server-id: 'github'
           settings-path: ${{ github.workspace }}
-      # - name: Configure Git user
-      #   run: |
-      #     git config user.email "actions@github.com"
-      #     git config user.name "GitHub Actions"
-      - name: Publish JAR
-        run: | 
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.5
+        with:
+          maven-version: 3.8.2          
+      - name: Configure Git user
+        run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
+      - name: Publish JAR
+        run: | 
           mvn -B release:prepare --file weather-report/pom.xml
           mvn release:perform --file weather-report/pom.xml -s $GITHUB_WORKSPACE/settings.xml
         env:
