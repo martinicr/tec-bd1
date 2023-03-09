@@ -7,7 +7,7 @@ on:
 
     paths:
       - weather-report/**
-      - .github/workflows/weather-report-build.yml 
+      - .github/workflows/weather-report-release.yml 
 
 jobs:
   publish:
