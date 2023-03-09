@@ -22,6 +22,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           server-id: 'github'
+          settings-path: ${{ github.workspace }}
       - name: Configure Git user
         run: |
           git config user.email "actions@github.com"
