@@ -17,6 +17,7 @@ jobs:
       actions: write
       repository-projects: write
       packages: write
+      deployments: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
