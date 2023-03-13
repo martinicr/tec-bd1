@@ -13,6 +13,8 @@ public class App
         cmd.setExecutionStrategy(new CommandLine.RunAll()); // default is RunLast
         cmd.execute(args);
 
-        if (args.length == 0) { cmd.usage(System.out); }
+        if (args.length == 0) {
+            cmd.usage(System.out);
+        }
     }
 }
