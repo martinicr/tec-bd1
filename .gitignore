@@ -60,3 +60,5 @@ docker/
 .terraform/
 terraform.tfstate
 terraform.tfstate.backup
+
+logFile*.log
